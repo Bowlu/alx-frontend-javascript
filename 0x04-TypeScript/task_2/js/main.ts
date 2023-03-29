@@ -63,3 +63,16 @@ function executeWork(employee: DirectorInterface | TeacherInterface) {
     return employee.workTeacherTasks();
   }
 }
+
+// using string literal types
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects) {
+  if (todayClass === 'Math') {
+    return "Teaching Math";
+  }
+  if (todayClass === 'History') {
+    return "Teaching History";
+  }
+}
+
