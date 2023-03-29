@@ -12,3 +12,8 @@ interface Teacher {
 interface Directors extends Teacher {
  numberOfReports: number;
 }
+
+// function that prints teachers
+export const printTeacher: Teacher(firstName: string, lastName: string) => {
+ `${firstName[0]}. ${lastName}`;
+}
