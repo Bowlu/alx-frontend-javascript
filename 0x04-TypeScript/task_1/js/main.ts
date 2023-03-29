@@ -17,3 +17,27 @@ interface Directors extends Teacher {
 export const printTeacher: Teacher(firstName: string, lastName: string) => {
  `${firstName[0]}. ${lastName}`;
 }
+
+// writing a class
+interface studentClassInerface {
+ firstName: string;
+ lastName: string;
+}
+
+class studentClass {
+ firstName: string;
+ lastName: string;
+
+ constructor(firstName: string, lastName: string){
+  this.firstName = firstName;
+  this.lastName = lastName;
+ }
+
+ workOnHomework(): string{
+  return "Currently working";
+ }
+
+ displayName(): string{
+  return this.firstName;
+ }
+}
